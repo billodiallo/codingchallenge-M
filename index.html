@@ -35,7 +35,25 @@
         <input id="email" type="email" placeholder="enter your email" required>
         <label for="number" id="number-label">* Age:</label>
         <input id="number" type="number" placeholder="enter your age" min=1 max=125 required>
-
+        <label for="dropdown" id="dropdown-label">Which Position would you like to fill in the future:</label>
+        <select id="dropdown">
+          <option value="d1">Full Stack developer</option>
+          <option value="d2">Front End developers</option>
+        </select>
+        <label for="recommendation">* How likely is that you would recommend Microverse to a friend?</label>
+        <fieldset id="recommendation">
+          <label for="r_definitely"><input type="radio" name="recommend" id="r_definitely" value="definitely" required>Definitely</label>
+          <label for="r_maybe"><input type="radio" name="recommend" id="r_maybe" value="maybe" required>Maybe</label>
+          <label for="r_not_sure"><input type="radio" name="recommend" id="r_not_sure" value="notsure" required>Not sure</label>
+        </fieldset>
+        <label for="likethemost">What challenged you the most in the trials:</label>
+        <select id="likethemost">
+          <option value="" disabled selected>select an option</option>
+          <option value="language">Language</option>
+          <option value="internet">Internet Speed</option>
+          <option value="coding">Coding Challenges</option>
+          <option value="project">Final Project</option>
+        </select>
       </form>
     </div>
   </body>
