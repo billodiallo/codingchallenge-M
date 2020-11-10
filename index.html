@@ -21,9 +21,8 @@
     - The freeCodeCamp Team
 
     -->
-    <h1>Hello World, we are software developers. </h1> 
     <script  src="js/index.js"></script>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
     <div id="titlediv">
       <h1 id="title">Microverse Survey Form</h1>
       <p id="description">Thank you for taking the time to help us improve the platform</p>
@@ -54,13 +53,18 @@
           <option value="coding">Coding Challenges</option>
           <option value="project">Final Project</option>
         </select>
-       
-
-        
+       <!-- Things that should be improved in the future -->
+       <label for="improvements">Things that should be improved in the future:</label>
+       <fieldset id="improvements">
+         <legend>(<em>Check all that apply</em>)</legend>
+         <label for="c-fep"><input type="checkbox" name="improve-checks" id="c-fep" value="fep">Front-end Projects</label>
+         <label for="c-bep"><input type="checkbox" name="improve-checks" id="c-bep" value="bep">Back-end Projects</label>
+         <label for="c-datav"><input type="checkbox" name="improve-checks" id="c-datav" value="datav">Better choice of candidates</label>
+       </fieldset>
         <!-- Any Comments or Suggestions -->
         <label for="comments">Any Comments or Suggestions?</label>
         <textarea style="height:50px;resize:vertical;" id="comments" placeholder="enter a comment"></textarea>
-      </section>
+      
 
       <!-- submit -->
       <button id="submit">submit</button>
